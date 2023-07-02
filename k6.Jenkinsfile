@@ -1,5 +1,5 @@
 node {
   stage('step1'){
-    scho 'script 1'
+    echo 'script 1'
   }
 }
