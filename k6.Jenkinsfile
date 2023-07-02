@@ -1,19 +1,14 @@
 pipeline {
   agent any
   stages {    
-      stage('step1'){
+      stage('verify k6'){
         steps{
-          echo 'script 1'
+          sh 'k6 version'
         } 
       }
-      stage('step2'){
+      stage('run k6 test'){
         steps{
-          echo 'script 2'
-        }
-      }
-      stage('step3'){
-        steps{
-          echo 'script 3'
+          sh 'k6 run teste1.js'
         }
       }
     }
