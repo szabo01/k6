@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
   agent any
   stages {    
       stage('step1'){
@@ -6,12 +6,12 @@ pipeline{
           echo 'script 1'
         } 
       }
-      stage('step1'){
+      stage('step2'){
         steps{
           echo 'script 2'
         }
       }
-      stage('step1'){
+      stage('step3'){
         steps{
           echo 'script 3'
         }
